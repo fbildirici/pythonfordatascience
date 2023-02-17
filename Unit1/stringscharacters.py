@@ -42,3 +42,50 @@ long_str
 ##### String (Karakter Dizisi) Metodları ######
 ###############################################
 
+dir(int)
+
+dir(str)
+
+#######len = uzunluk metodu #####################################
+
+name = "John"
+type(name)
+type(len)
+
+len(name) # 4 çıkmalı uzunluk
+len("fatihbildiriciforacademia") #ctrl basıp metoda tıkladığımızda ilgili wiki dosyası açılır
+
+###### upper-lower : kücük - büyük dönüşümleri #################
+
+"pythonfordatascienceinacademicanalysis".upper() #tüm harfleri büyük yapar
+"PYTHONFORDATASCIENCEINACADEMICANALYSIS".lower() #tüm harfleri küçük yapar
+
+#upper ve lower class içerisinde tanımlandığı için type fonksiyonu çalışmaz ve bunlar metoddur
+#class içerisinde olmayanlar fonksiyondur
+
+### replace - karakter değiştirir #################
+###################################################
+
+hi = "Hello to Python for Data Science Course"
+hi.replace("l","p")
+
+####### hello - heppo olarak değişti ##########
+
+############# Split - stringi böler############
+
+"Hello to Python for Data Science".split() ###kelimeler bölünüp ayrılıyor
+
+############# Strip - Kırpma İşlemini Yapar ###
+
+" ofofo ".strip()     ##başındaki boşlukları kırpar ofofo
+"ofofo".strip("o")    ##başta ve sondaki o harflerini kırpar fof
+
+###### Capitalize - ilk harfi büyütür ############
+
+"pythonforacademicdataanalysis".capitalize()
+
+dir("pythonforacademicdataanalysis") #kullanılabilecek metodları listeler
+
+"pythonfordatascience".startswith("o") #boolean başladığı harf, karakter kontrolü false döndü
+
+
