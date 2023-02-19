@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently working on **Computational Social Sciences**
 
-- 🌱 I’m currently learning **Python for DevOps, Docker, Kubernetes**
+- 🌱 I’m currently learning **Python for Academic Data Analysis, DevOps, Docker, Kubernetes**
 
 - 👨‍💻 All of my projects are available at [https://fbildirici.github.io/](https://fbildirici.github.io/)
 
