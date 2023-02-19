@@ -43,3 +43,39 @@ number_check(12)
 ##################### ELSE & Elif ###################################
 
 
+
+def number_check(number):
+    if number == 10:
+        print("number is 10")
+
+number_check(10)
+
+#### 10 olduğu için dolu , olmasa boş çıkarır
+#### else ile koşullu durum ekleyelim
+
+def number_check(number):
+    if number == 10:
+        print("number is 10")
+    else:
+        print("number is not 10")
+
+number_check(11)
+
+#### numara 11 olduğu için else printini döndürür
+
+###### elif ########
+###### birden fazla koşulun olduğu doğru durumlarda kullanılır###
+##### else yanlış durumda ####
+
+def number_check(number):
+    if number > 10:
+        print("number is greater than 10")
+    elif number < 10:
+        print("number is less than 10")
+    else:
+        print("number is equal to 10")
+
+number_check(12)
+number_check(6)
+number_check(10)
+
