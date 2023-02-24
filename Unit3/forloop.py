@@ -81,7 +81,7 @@ for salary in salaries2:
 salaries = [1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000]
 
 for salary in salaries:
-    if salary >= 5000:
+    if salary >= 3000:
     print(new_salary(salary, 10))
 else:
     print(new_salary(salary, 20))
