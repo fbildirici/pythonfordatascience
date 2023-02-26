@@ -30,3 +30,20 @@ dict
 dict.pop("Antonio")
 dict ##pop delete komutu
 
+l = [2,13,18,93,22]
+
+def func(list):
+
+    çift_list = []
+    tek_list = []
+
+    for i in list:
+        if i % 2 == 0:
+            çift_list.append(i)
+        else:
+            tek_list.append(i)
+
+    return çift_list, tek_list
+
+
+çift,tek = func(l)
