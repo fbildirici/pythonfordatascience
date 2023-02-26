@@ -17,3 +17,15 @@ dataindex
 
 lst.pop(8)
 lst ## n silindi
+
+### listeye eleman ekleme
+
+lst.append("academicdatascience")
+lst ## string ifade liste sonuna eklendi
+
+### sildiğimiz sekizinci sıradaki N harfini tekrar ekleyelim
+
+lst.insert(8, "N")
+
+lst
+
