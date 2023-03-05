@@ -21,4 +21,17 @@ dictionary.items() #tuple halinde çiftler
 
 ####### UYGULAMA SORUSU#########
 
+## amaç: çift sayıların karesini alarak bir sözlüğe eklemek
+## odak: keyler aynı kalacak, valueların bir kısmının karesi alınacak onlar değişecek
+
+numbers = range(10) ##0dan 10a kadar sayı oluştur
+new_dict = {} #boş bir sözlük oluştur
+
+for n in numbers:
+    if n % 2 == 0:
+     new_dict[n] = n ** 2        ##burada ilk [n] değişmeyecek keyi atar, ikincisi value değerini
+
+### dictcomprehension
+
+{n: n ** 2 for n in numbers if n % 2 == 0}
 
