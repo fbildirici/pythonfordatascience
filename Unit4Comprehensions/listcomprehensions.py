@@ -33,4 +33,32 @@ else:
 
 ## sonuçta bize [2400.0, 4800.0, 3600.0, 4800.0, 6000.0] sonucunu döndürür aynı şekilde bu comprehension yapısı
 
+## maaşlar listesindeki her maaşı 2 ile çarpacak bir comprehension yazalım
 
+[salary * 2 for salary in salaries]
+
+## hadi maaşı 3000den küçükleri 2 ile çarpalım sadece liste olarak alalım
+
+[salary * 2 for salary in salaries if salary < 3000]
+
+### not comprehension yapısında if tek kullanılırsa sağa yazılır
+## else ile birlikteyse sola, for blogunun önüne yazılır
+
+[salary * 2 if salary < 3000 else salary * 0 for salary in salaries]
+
+## hadi bir de elimizdeki bir fonksiyonu bu comprehension içerisine ekleyelim
+
+[new_salary(salary * 2) if salary < 3000 else new_salary(salary * 0.2 )for salary in salaries]
+
+## burada new_Salary fonksiyonu içerisinde yaptık her iki işlemi de
+
+## başka bir örnek yapalım öğrenci ve istenmeyen listesindeki öğrencileri gezsin
+# comprehension içerisinde istenmeyenleri küçük diğerlerini büyük yazsın
+
+students = ["Yuval", "Noah", "Harari", "Cem", "Say"]
+
+students_no = ["Yuval", "Noah"]
+
+[student.lower() if student in students_no else student.upper() for student in students]
+
+[student.upper() if student not in students_no else student.lower() for student in students]
